@@ -53,8 +53,10 @@ p {
 textarea {
   resize: none;
 }
-
+section {
+}
 .container {
+  position: relative;
   margin: 0 auto;
   padding: 0 7px;
   max-width: 1160px;
