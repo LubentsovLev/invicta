@@ -12,6 +12,7 @@
 .header {
   padding-top: 40px;
   padding-bottom: 80px;
+
   &__container {
     display: flex;
     align-items: center;
@@ -47,11 +48,12 @@
   }
 }
 .head {
+  padding-bottom: 40px;
+  padding-right: 20px;
   &__container {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    padding-bottom: 40px;
   }
   &__left {
     min-height: 450px;
@@ -125,7 +127,7 @@
     flex-direction: column;
   }
   &__slider {
-    max-width: 200px;
+    max-width: 250px;
     position: relative;
     .slick-arrow {
       position: absolute;
@@ -166,8 +168,8 @@
       // }
     }
     &-img {
-      width: 200px;
-      height: 200px;
+      min-width: 250px !important;
+      height: 250px;
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -240,9 +242,9 @@
   }
 }
 .tariff {
+  width: 100%;
+  padding: 80px 0;
   &__container {
-    width: 100%;
-    padding: 80px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -317,11 +319,11 @@
 }
 .team {
   overflow: hidden;
+  padding: 80px 0;
+  width: 100%;
+  text-align: center;
+  background-color: #232222;
   &__container {
-    padding: 80px 0;
-    width: 100%;
-    text-align: center;
-    background-color: #232222;
   }
   &__title {
     margin-bottom: 30px;
@@ -406,12 +408,14 @@
   }
 }
 .free {
+  max-width: 1160px;
+  margin: 0 auto;
   text-align: center;
+  padding: 80px 7px;
+  border-radius: 0 30px 0 30px;
+  width: 100%;
+  background-color: #fff;
   &__container {
-    padding: 80px 0;
-    border-radius: 0 30px 0 30px;
-    width: 100%;
-    background-color: #fff;
   }
   &__title {
     margin-bottom: 40px;
@@ -528,4 +532,34 @@
     color: #5f585a;
   }
 }
+
+.header-mob {
+  display: none;
+}
+[class*='ymaps-2'][class*='-ground-pane'] {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  /* Firefox 3.5+ */
+  -webkit-filter: grayscale(100%);
+  /* Chrome 19+ & Safari 6+ */
+}
+input[type='range'],
+.t-range,
+.js-tilda-rule {
+  -webkit-appearance: none;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #bdc3c7;
+  background-color: #fff;
+}
+.t-calc__wrapper,
+.t-name,
+.t-name_md {
+  font-size: 18px !important;
+}
+.t-checkbox__indicator {
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #d7d7d7 !important;
+}
+
 @import 'media';
