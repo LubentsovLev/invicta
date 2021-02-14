@@ -7,6 +7,8 @@ $(function () {
   //   });
   // }
   $('.head__slider').slick({
+    nextArrow: '<img src="../img/arr_r.svg" class="slick-next" alt="">',
+    prevArrow: '<img src="../img/arr_l.svg" class="slick-prev" alt="">',
     infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -15,6 +17,8 @@ $(function () {
     infinite: false,
     slidesToShow: 3,
     slidesToScroll: 1,
+    nextArrow: '<img src="../img/arr_r.svg" class="slick-next" alt="">',
+    prevArrow: '<img src="../img/arr_l.svg" class="slick-prev" alt="">',
     responsive: [
       {
         breakpoint: 720,
