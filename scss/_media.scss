@@ -1,3 +1,160 @@
+@media (max-width: 1400px) {
+  .abs {
+    &__header {
+      &_1 {
+        display: none;
+      }
+      &_2 {
+        top: 100px;
+        left: calc(30% - 60px);
+      }
+    }
+    &__program {
+      &_1 {
+        right: 0px;
+        top: -30px;
+      }
+      &_2 {
+        left: 20px;
+        top: auto;
+        bottom: -15px;
+        width: 70px;
+      }
+    }
+    &__team {
+      &_1 {
+        left: -30px;
+        top: -150px;
+      }
+      &_2 {
+        right: 0;
+        top: 30px;
+      }
+    }
+    &__free {
+      &_1 {
+        top: 60px;
+        left: 90px;
+      }
+      &_2 {
+        right: 30px;
+        top: -30px;
+      }
+    }
+  }
+}
+@media (max-width: 850px) {
+  .abs {
+    &__header {
+      &_1 {
+        display: none;
+      }
+      &_2 {
+        top: 100px;
+        left: calc(10% - 60px);
+      }
+    }
+    &__program {
+      &_1 {
+        right: 0px;
+        top: -30px;
+      }
+      &_2 {
+        left: 20px;
+        top: auto;
+        bottom: -15px;
+        width: 70px;
+      }
+    }
+    &__team {
+      &_1 {
+        width: 60px;
+        left: 30px;
+        top: -70px;
+      }
+      &_2 {
+        display: none;
+      }
+    }
+    &__free {
+      &_1 {
+        width: 60px;
+        top: 10px;
+        left: 30px;
+      }
+      &_2 {
+        width: 70px;
+        right: 30px;
+        top: auto;
+        bottom: -20px;
+      }
+    }
+    &__map {
+      &_1 {
+        display: none;
+        left: 0px;
+        top: auto;
+        bottom: 0px;
+      }
+    }
+  }
+  .header-bg {
+    background-color: #232222;
+  }
+  .head {
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    p,
+    div,
+    h3,
+    h1,
+    a {
+      color: #fff;
+    }
+    &__btn {
+      background-color: #fff;
+      color: #232222 !important;
+      span {
+      }
+    }
+    &__item {
+      margin-bottom: 20px;
+      &s {
+        margin-bottom: 70px;
+      }
+      &:nth-last-child(1) {
+        margin-bottom: 0;
+      }
+      span {
+        margin-right: 10px;
+        border-radius: 50%;
+        padding: 14px;
+        border: 1px solid #ffffff;
+        position: relative;
+        &::after {
+          content: '';
+          position: absolute;
+          top: calc(50% - 6.5px);
+          left: calc(50% - 6.5px);
+          width: 13px;
+          height: 13px;
+          background-color: #ffffff;
+          border-radius: 50%;
+        }
+      }
+      p {
+      }
+    }
+  }
+  .program__container,
+  .free {
+    border-radius: 0;
+  }
+  .tariff__item-title,
+  .tariff__item-body {
+    border-radius: 0 10px 0 10px;
+  }
+}
+
 @media (max-width: 1200px) {
   .container {
   }
@@ -214,14 +371,24 @@
       margin-right: 0;
     }
   }
+  .head__item {
+    p {
+      color: #fff;
+    }
+  }
   .map {
+    background-image: none !important;
+    &__map {
+      width: 300px;
+    }
     &__container {
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      padding-bottom: 20px;
     }
     &__left {
-      margin-bottom: 60px;
+      margin-bottom: 0px;
     }
   }
   .footer {
@@ -271,10 +438,68 @@
     }
   }
 }
+@media (max-width: 450px) {
+  .abs {
+    &__header {
+      &_1 {
+        display: none;
+      }
+      &_2 {
+        display: none;
+      }
+    }
+    &__program {
+      &_1 {
+        display: none;
+      }
+      &_2 {
+        left: 20px;
+        top: auto;
+        bottom: -15px;
+        width: 50px;
+      }
+    }
+    &__team {
+      &_1 {
+        width: 60px;
+        left: 30px;
+        top: -70px;
+      }
+      &_2 {
+        display: none;
+      }
+    }
+    &__free {
+      &_1 {
+        width: 60px;
+        top: 10px;
+        left: 30px;
+      }
+      &_2 {
+        width: 70px;
+        right: 30px;
+        top: auto;
+        bottom: -20px;
+      }
+    }
+    &__map {
+      &_1 {
+        display: none;
+        left: 0px;
+        top: auto;
+        bottom: 0px;
+      }
+    }
+  }
+}
 @media (max-width: 400px) {
   .team__item {
     max-width: 250px;
     margin: 0;
+  }
+  .head__title {
+    font-size: 50px;
+    max-width: 300px;
   }
   .team__items {
     .slick-arrow {
